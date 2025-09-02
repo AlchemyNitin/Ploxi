@@ -6,7 +6,7 @@ const Header = ({ onNavigate, onLogout }) => (
       <div className="flex justify-between items-center py-2">
         {/* LOGO */}
         <div
-          className="flex items-center space-x-2 cursor-pointer mr-auto" 
+          className="flex items-center space-x-2 cursor-pointer mr-auto"
           onClick={() => onNavigate('dashboard')}
         >
           <img
@@ -24,6 +24,8 @@ const Header = ({ onNavigate, onLogout }) => (
           >
             Dashboard
           </button>
+          <button onClick={() => onNavigate('benchmarking')} className="text-gray-600 hover:text-brand-teal font-medium">Benchmarking</button>
+
           <button
             onClick={() => onNavigate('marketplace')}
             className="text-gray-600 hover:text-brand-teal font-medium"
